@@ -51,7 +51,7 @@ function Bugs() {
           category={firstLetterCapital(v.category)}
         />
       ))}
-      <p className="bugListError"> {bugListError}</p>
+      <p className={bugListError!==0 ? "bugListError" : "no-bugListError"}> {bugListError}</p>
     </div>
   );
 }
