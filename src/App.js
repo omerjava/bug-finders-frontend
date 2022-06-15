@@ -91,15 +91,15 @@ function App() {
         <Router>
           <Navbar login={loggedIn} />
           <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/bugs" exact element={<Bugs />} />
-            <Route path="/register" exact element={<Register />} />
-            <Route path="/login" exact element={<Login />} />
-            <Route path="/profile" exact element={<MyProfile />} />
-            <Route path="/my-bugs" exact element={<MyBugs />} />
-            <Route path="/my-comments" exact element={<MyComments />} />
-            <Route path="/new-bug" exact element={<NewBug />} />
-            <Route path="/bug-finders" exact element={<BugFinders />} />
+            <Route path="/bug-finders-frontend/" exact element={<Home />} />
+            <Route path="/bug-finders-frontend/bugs" exact element={<Bugs />} />
+            <Route path="/bug-finders-frontend/register" exact element={<Register />} />
+            <Route path="/bug-finders-frontend/login" exact element={<Login />} />
+            <Route path="/bug-finders-frontend/profile" exact element={<MyProfile />} />
+            <Route path="/bug-finders-frontend/my-bugs" exact element={<MyBugs />} />
+            <Route path="/bug-finders-frontend/my-comments" exact element={<MyComments />} />
+            <Route path="/bug-finders-frontend/new-bug" exact element={<NewBug />} />
+            <Route path="/bug-finders-frontend/bug-finders" exact element={<BugFinders />} />
           </Routes>
           <Footer />
         </Router>
