@@ -9,22 +9,29 @@ import { AllContext } from "../../context/AllContext";
 
 function Bugs() {
   const [bugList, setBugList] = useState([]);
+  const [bugListError, setBugListError] = useState("");
 
-  const { newUpdatedBug, newDeletedBug } = 
-  useContext(AllContext); 
+
+  const { newUpdatedBug, newDeletedBug } = useContext(AllContext); 
 
   const getBugs = () => {
     const response = bugApi.getAllBugs();
 
     response
       .then((res) => {
-        if (res.ok) return res.json();
-        else return "Your access is expired!";
+        if (res.ok) {
+          setBugListError("");
+          return res.json();
+        } 
+        else {
+          setBugListError(`Sorry! We couldn't get Bugs due to: ${res.status} ${res.statusText}`)
+          return;
+        }
       })
       .then((data) => {
         if (typeof data !== "string") {setBugList(data);}
       })
-      .catch((err) => console.log(err));
+      .catch((err) => setBugListError(err.message));
   };
 
   useEffect(() => {
@@ -44,6 +51,7 @@ function Bugs() {
           category={firstLetterCapital(v.category)}
         />
       ))}
+      <p className="bugListError"> {bugListError}</p>
     </div>
   );
 }

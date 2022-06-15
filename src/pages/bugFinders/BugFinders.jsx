@@ -41,7 +41,8 @@ function BugFinders() {
             : "do-not-show"
         }
       >
-        {errorGetBugFinders}
+        <p className="errorGetBugFinders">{errorGetBugFinders}</p>
+        
       </p>
     </div>
   );

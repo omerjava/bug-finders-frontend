@@ -15,7 +15,7 @@ function MyProfile() {
 
   const { setLoggedIn, loggedInUser, loggedInEmail } = useContext(AllContext);
 
-  
+  // delete user
 
   const deleteUserHandle = () => {
     const response = userApi.deleteMyAccount();

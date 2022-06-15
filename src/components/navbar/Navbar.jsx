@@ -1,48 +1,48 @@
 import React from "react";
 import { auth } from "../../api-calls/auth-api-calls";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
-
-
-
   return (
     <div>
       <nav className="general-nav">
         <ul>
           <li>
-            <a href="/bug-finders-frontend/">Home</a>
+            <Link to="/bug-finders-frontend/"> Home </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/bugs">Bugs</a>
+            <Link to="/bug-finders-frontend/bugs"> Bugs </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/register">Register</a>
+            <Link to="/bug-finders-frontend/register"> Register </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/login">Login</a>
+            <Link to="/bug-finders-frontend/login"> Login </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/" onClick={() => auth.logoutUser()}>Logout</a>
+            <Link to="/bug-finders-frontend/" onClick={() => auth.logoutUser()}>
+              Logout
+            </Link>
           </li>
         </ul>
       </nav>
       <nav className={props.login ? "member-nav" : "no-member-nav"}>
-      <ul>
+        <ul>
           <li>
-            <a href="/bug-finders-frontend/profile">My Profile</a>
+            <Link to="/bug-finders-frontend/profile"> My Profile </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/my-bugs">My Bugs</a>
+            <Link to="/bug-finders-frontend/my-bugs"> My Bugs </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/my-comments">My Comments</a>
+            <Link to="/bug-finders-frontend/my-comments"> My Comments </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/new-bug">Post New Bug</a>
+            <Link to="/bug-finders-frontend/new-bug"> Post New Bug </Link>
           </li>
           <li>
-            <a href="/bug-finders-frontend/bug-finders">Bug Finders</a>
+            <Link to="/bug-finders-frontend/bug-finders"> Bug Finders </Link>
           </li>
         </ul>
       </nav>

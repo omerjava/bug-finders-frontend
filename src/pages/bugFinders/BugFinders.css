@@ -13,6 +13,12 @@
     display: none;
 }
 
+.bugFindersPage .errorGetBugFinders {
+    color: brown;
+    font-weight: 500;
+    height: 400px;
+}
+
 @media only screen and (max-width: 600px) {
     .bugFindersPage {
         margin: 10px 0px;
