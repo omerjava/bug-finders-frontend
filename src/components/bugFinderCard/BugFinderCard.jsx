@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { bugApi } from "../api-calls/bug-api-calls";
-import { commentApi } from "../api-calls/comment-api-calls";
-import BugCard from "../components/bugCard/BugCard";
-import Comment from "../components/comment/Comment";
-import { firstLetterCapital } from "../logic/firstLetterCapital";
+import { bugApi } from "../../api-calls/bug-api-calls";
+import { commentApi } from "../../api-calls/comment-api-calls";
+import { firstLetterCapital } from "../../logic/firstLetterCapital";
+import BugCard from "../bugCard/BugCard";
+import Comment from "../comment/Comment";
 import "./BugFinderCard.css";
 
 function BugFinderCard(props) {

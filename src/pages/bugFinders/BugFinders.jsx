@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import BugFinderCard from "../../components/bugFinderCard/BugFinderCard";
 import { userApi } from "../../api-calls/user-api-calls";
-import BugFinderCard from "../../bugFinderCard/BugFinderCard";
 import "./BugFinders.css";
 
 function BugFinders() {
