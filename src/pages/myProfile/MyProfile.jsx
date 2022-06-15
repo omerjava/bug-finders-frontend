@@ -27,7 +27,7 @@ function MyProfile() {
           localStorage.removeItem("refreshToken");
           localStorage.removeItem("accessToken");
           setLoggedIn(false);
-          navigate("/");
+          navigate("/bug-finders-frontend/");
         } else setErrorDeleteUser(`${res.status} ${res.statusText}`);
       })
       .catch((err) => setErrorDeleteUser(err));

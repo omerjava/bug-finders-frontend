@@ -22,8 +22,7 @@ function Bugs() {
         else return "Your access is expired!";
       })
       .then((data) => {
-        if (typeof data !== "string") {console.log(data); setBugList(data);}
-        else console.log(data);
+        if (typeof data !== "string") {setBugList(data);}
       })
       .catch((err) => console.log(err));
   };

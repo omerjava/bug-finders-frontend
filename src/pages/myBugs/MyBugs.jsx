@@ -27,9 +27,7 @@ function MyBugs() {
       .then((data) => {
         if (typeof data !== "string") {
           setBugList(data);
-        } else {
-          console.log(data);
-        }
+        } 
       })
       .catch((err) => console.log(err));
   };

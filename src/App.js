@@ -54,6 +54,7 @@ function App() {
         }
       })
       .then((data) => {
+        if(data===undefined) return;
         setLoggedInEmail(data[0].email);
         setLoggedInUser(data[0].username);
       })

@@ -9,7 +9,7 @@ export const getToken = async () => {
     localStorage.setItem("expirationDate", newExpirationDate());
     return token.accessToken;
   } else {
-    console.log("tokens.js 11 | token not expired");
+    // console.log("tokens.js 11 | token not expired");
     return localStorage.getItem("accessToken");
   }
 };
@@ -47,10 +47,8 @@ const getValidTokenFromServer = async (refreshToken) => {
     });
     if (response.ok) {
       const token = await response.json();
-      console.log("new token", token);
       return token;
     } else {
-      console.log(response);
       return "Your access is expired!";
     }
   } catch (error) {
