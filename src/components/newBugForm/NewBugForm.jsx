@@ -14,7 +14,7 @@ function NewBugForm() {
 
     response
       .then((res) => {
-        if (res.ok) setMessageBug("You bug post is recorded successfully!");
+        if (res.ok) setMessageBug("Your Bug post is recorded successfully!");
         else setMessageBug("Your access is expired!");
       })
       .catch((err) => console.log(err));

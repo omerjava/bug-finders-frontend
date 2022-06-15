@@ -11,38 +11,38 @@ function Navbar(props) {
       <nav className="general-nav">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/bug-finders-frontend/">Home</a>
           </li>
           <li>
-            <a href="/bugs">Bugs</a>
+            <a href="/bug-finders-frontend/bugs">Bugs</a>
           </li>
           <li>
-            <a href="/register">Register</a>
+            <a href="/bug-finders-frontend/register">Register</a>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <a href="/bug-finders-frontend/login">Login</a>
           </li>
           <li>
-            <a href="/" onClick={() => auth.logoutUser()}>Logout</a>
+            <a href="/bug-finders-frontend/" onClick={() => auth.logoutUser()}>Logout</a>
           </li>
         </ul>
       </nav>
       <nav className={props.login ? "member-nav" : "no-member-nav"}>
       <ul>
           <li>
-            <a href="/profile">My Profile</a>
+            <a href="/bug-finders-frontend/profile">My Profile</a>
           </li>
           <li>
-            <a href="/my-bugs">My Bugs</a>
+            <a href="/bug-finders-frontend/my-bugs">My Bugs</a>
           </li>
           <li>
-            <a href="/my-comments">My Comments</a>
+            <a href="/bug-finders-frontend/my-comments">My Comments</a>
           </li>
           <li>
-            <a href="/new-bug">Post New Bug</a>
+            <a href="/bug-finders-frontend/new-bug">Post New Bug</a>
           </li>
           <li>
-            <a href="/bug-finders">Bug Finders</a>
+            <a href="/bug-finders-frontend/bug-finders">Bug Finders</a>
           </li>
         </ul>
       </nav>

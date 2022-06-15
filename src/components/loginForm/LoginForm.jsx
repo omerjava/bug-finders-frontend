@@ -22,12 +22,9 @@ function LoginForm() {
     response.then((res) => {
         if (res.ok) {
           setMessage("");
-          navigate("/new-bug");
+          navigate("/bug-finders-frontend/new-bug");
           setLoggedIn(true);
-          console.log(res);
-
         } else {
-          console.log(res);
           setMessage("We couldn't login! Please try again!");
         }
         return res.json();
@@ -35,7 +32,6 @@ function LoginForm() {
         localStorage.setItem("accessToken", data.accessToken); 
         localStorage.setItem("refreshToken", data.refreshToken);
         setLoggedInUser(data.username); 
-        console.log(data);
       })
       .catch((err) => setMessage("We couldn't login! Please try again!"));
   };
