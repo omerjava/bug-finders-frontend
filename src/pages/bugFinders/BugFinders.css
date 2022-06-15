@@ -1,0 +1,21 @@
+.bugFindersPage {
+    margin: 20px;
+}
+
+.bugFindersPage .no-data {
+    min-height: 400px;
+    color: brown;
+    font-size: large;
+    font-weight: 600;
+}
+
+.bugFindersPage .do-not-show {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .bugFindersPage {
+        margin: 10px 0px;
+    }
+  }
+  

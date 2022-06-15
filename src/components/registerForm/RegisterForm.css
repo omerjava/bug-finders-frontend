@@ -1,0 +1,80 @@
+.registerForm {
+    min-height: 100px;
+}
+
+.registerForm .show-form {
+    display: block;
+    width:500px;
+    margin: 60px auto;
+    padding: 20px 50px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+}
+
+.registerForm .close-form {
+    display: none;
+}
+
+.registerForm h2 {
+    margin-left: 20%;
+    text-align: start;
+}
+
+.registerForm input {
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+}
+
+.registerForm .btn {
+    background-color: rgb(32, 51, 66);
+    color: white;
+    font-size: medium;
+}
+
+.registerForm .btn:hover {
+    background-color: rgb(59, 94, 113);
+    color: white;
+    cursor: pointer;
+}
+
+.registerForm .registerMessage {
+    display: block;
+    width:500px;
+    margin: 160px auto;
+    padding: 20px 50px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+    
+}
+
+.registerForm .no-message {
+    display: none;
+}
+
+@media only screen and (max-width: 530px) {
+    .registerForm .show-form {
+        width:100%;
+        margin: 90px 0px;
+    }
+    
+    .registerForm h2 {
+        margin-left: 6%;
+    }
+    
+    .registerForm input {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .registerForm .show-form {
+        padding: 20px 10px;
+    }
+
+    .registerForm h2 {
+        margin-left: 5%;
+    }
+  }

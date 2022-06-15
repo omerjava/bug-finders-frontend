@@ -1,0 +1,40 @@
+.intro {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 50%;
+    margin-right: 20px;
+    background-color: rgba(252, 238, 222, 0.671);
+}
+
+.intro-body {
+    color: rgb(28, 25, 25);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.intro-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: 600;
+    margin-top: 5px;
+    color: rgb(120, 69, 8);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .intro {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .intro-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,63 @@
+.bugFinderCard {
+  border: 2px solid rgb(234, 188, 37);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(199, 180, 158, 0.434);
+}
+
+.bugFinderCard-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(78, 71, 4);
+  font-size: medium;
+}
+
+.bugFinderCard-body .username {
+  color: rgb(85, 3, 3);
+  font-weight: 500;
+}
+
+.bugFinderCard-bugs,
+.bugFinderCard-comments {
+  text-decoration: underline;
+  color: rgb(143, 111, 63);
+  font-weight: 600;
+}
+
+.bugFinderCard-bugs:hover,
+.bugFinderCard-comments:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bugFinderCard-footer {
+  border: 2px solid rgb(234, 188, 37);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(247, 242, 235);
+}
+
+.hideElement {
+  display: none;
+}
+
+.bugFinderCard .error-style {
+  color: brown;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .bugFinderCard {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .bugFinderCard-footer {
+    padding: 0px;
+  }
+}

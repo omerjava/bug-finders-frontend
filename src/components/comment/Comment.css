@@ -1,0 +1,126 @@
+.comment {
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  background-color: #c5c1b7;
+  margin: 3px;
+  text-align: start;
+}
+
+.comment-body {
+  border-bottom: rgb(114, 114, 114) solid 1px;
+  padding: 10px;
+}
+
+.comment-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.comment-username {
+  font-size: small;
+  color: #7e5a29;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.comment-date {
+  font-size: small;
+  color: #7e5a29;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.comment-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-buttons button {
+  border-radius: 5px;
+  background-color: #324754;
+  border: solid 2px rgb(24, 24, 28);
+  margin-right: 5px;
+  color: rgb(230, 227, 227);
+}
+
+.comment-buttons button:hover {
+  background-color: #0f202a;
+  color: rgb(230, 227, 227);
+}
+
+.comment-buttons button:focus {
+  background-color: #268d11;
+  color: rgb(230, 227, 227);
+}
+
+.comment .comment-buttons .editBtn {
+  display: block;
+}
+
+.comment .comment-buttons .no-editBtn {
+  display: none;
+}
+
+.comment .comment-buttons .deleteBtn {
+  display: block;
+}
+
+.comment .comment-buttons .no-deleteBtn {
+  display: none;
+}
+
+.comment-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.comment-edit-buttons {
+  margin-bottom: 10px;
+}
+
+.comment-edit-buttons button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.comment-edit-buttons button:hover {
+  background-color: #f5aa08;
+  color: rgb(13, 5, 5);
+}
+
+.comment-edit-buttons button:focus {
+  background-color: #0ea62c;
+  color: rgb(240, 237, 237);
+}
+
+.no-comment-edit {
+  display: none;
+}
+
+.comment textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .comment-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-date {
+    display: none;
+  }
+}

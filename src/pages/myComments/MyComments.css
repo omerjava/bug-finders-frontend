@@ -1,0 +1,12 @@
+.myComments {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 30px;
+}
+
+.myComments .no-data {
+    min-height: 350px;
+    color: brown;
+    font-size: large;
+    font-weight: 600;
+}

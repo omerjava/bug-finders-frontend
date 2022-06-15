@@ -1,0 +1,98 @@
+.myProfile {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 250px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.myProfile .common {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 210, 210);
+}
+
+.myProfile .common button {
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.myProfile .common button:hover {
+    background-color: rgb(185, 57, 57);
+    color: white;
+    cursor: pointer;
+}
+
+.myProfile .spans {
+  margin-left: 20px;
+  color: brown;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.myProfile .change {
+    display: block;
+    width: 100%;
+    background-color: rgb(208, 194, 180);
+    padding: 10px;
+    border: 1px rgb(115, 115, 115) solid;
+    margin-bottom: 20px;
+}
+
+.myProfile .no-change {
+    display: none;
+}
+
+.myProfile .change input[type=text] {
+    width: 40%;
+    margin-left: 10px;
+    height: 25px;
+}
+
+.myProfile .change input[type=button] {
+    width: 20%;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(62, 62, 62);
+    height: 25px;
+}
+
+.myProfile .change input[type=button]:hover {
+    background-color: rgb(68, 72, 74);
+    color: rgb(244, 244, 244);
+    border: solid 2px rgb(62, 62, 62);
+    height: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  .myProfile {
+    width: 95%;
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+    .myProfile .common button {
+      width: 30%;
+      height: 30px;
+      border-radius: 5px;
+      background-color: brown;
+      color: white;
+      font-size: small;
+      font-weight: 500;
+    }
+  }

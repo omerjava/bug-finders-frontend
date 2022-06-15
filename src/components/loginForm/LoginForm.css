@@ -1,0 +1,70 @@
+.loginForm {
+  width: 500px;
+  margin: 80px auto;
+  padding: 20px 50px;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+}
+
+.loginForm h2 {
+  margin-left: 20%;
+  text-align: start;
+}
+
+.loginForm input {
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+}
+
+.loginForm .btn {
+  background-color: rgb(32, 51, 66);
+  color: white;
+  font-size: medium;
+}
+
+.loginForm .btn:hover {
+  background-color: rgb(59, 94, 113);
+  color: white;
+  cursor: pointer;
+}
+
+.loginForm .loginMessage {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px 20px;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+}
+
+.loginForm .no-message {
+  display: none;
+}
+
+@media only screen and (max-width: 530px) {
+  .loginForm {
+    width: 100%;
+    margin: 90px 0px;
+  }
+
+  .loginForm h2 {
+    margin-left: 6%;
+  }
+
+  .loginForm input {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .loginForm {
+    padding: 20px 10px;
+  }
+
+  .loginForm h2 {
+    margin-left: 5%;
+  }
+}

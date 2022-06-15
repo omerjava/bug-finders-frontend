@@ -1,0 +1,283 @@
+.card {
+  border-top: 2px solid #e3a710;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  text-align: start;
+}
+
+.card .editBtn {
+  display: block;
+}
+
+.card .no-editBtn {
+  display: none;
+}
+
+.card .deleteBtn {
+  display: block;
+}
+
+.card .no-deleteBtn {
+  display: none;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: rgb(218, 216, 216) solid 1px;
+  padding: 5px 20px;
+}
+
+.card-header span {
+  margin-right: 5px;
+}
+
+.card-body {
+  border-bottom: rgb(218, 216, 216) solid 1px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: black solid 0px;
+  padding: 10px;
+}
+
+.card-bugname {
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+  color: #ba761d;
+  font-weight: 600;
+}
+
+.card-bugname .bugName:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card .bugName-edit {
+  display: block;
+}
+
+.card .no-bugName-edit {
+  display: none;
+}
+
+.card .bugName-edit input {
+  border-radius: 5px;
+  background-color: #f3ebdb;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.card .bugName-edit button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.card-category {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  color: #ba761d;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.card-category .category:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card .category-edit {
+  display: block;
+}
+
+.card .no-category-edit {
+  display: none;
+}
+
+.card .category-edit input {
+  border-radius: 5px;
+  background-color: #f3ebdb;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.card .category-edit button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+.card-username {
+  font-size: medium;
+  color: #ba761d;
+  font-weight: 600;
+}
+
+.card-date {
+  font-size: small;
+  color: #ba761d;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.card-comments {
+  border: rgb(218, 216, 216) solid 1px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-buttons button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  color: rgb(16, 16, 16);
+  margin-right: 5px;
+}
+
+.card-buttons button:hover {
+  background-color: #f5aa08;
+  color: rgb(13, 5, 5);
+}
+
+.card .bug-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;    
+  align-items:flex-end;
+}
+
+.card .bug-edit-buttons {
+  margin-bottom: 10px;
+}
+
+.card .bug-edit-buttons button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.card .bug-edit-buttons button:hover {
+  background-color: #f5aa08;
+  color: rgb(13, 5, 5);
+}
+
+.card .no-bug-edit {
+  display: none;
+}
+
+.card .bug-reply {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;    
+  align-items:flex-end;
+}
+
+.card .bug-reply-buttons {
+  margin-bottom: 10px;
+}
+
+.card .bug-reply-buttons button {
+  border-radius: 5px;
+  background-color: #f8c351;
+  border: solid 2px rgb(24, 24, 28);
+  margin-left: 5px;
+  color: rgb(16, 16, 16);
+}
+
+.card .bug-reply-buttons button:hover {
+  background-color: #f5aa08;
+  color: rgb(13, 5, 5);
+}
+
+.card .no-bug-reply {
+  display: none;
+}
+
+.card textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 2px rgb(26, 35, 42);
+  border-radius: 5px;
+}
+
+.card .errorUpdateBug {
+  margin-left: 20px;
+  padding: 5px;
+  color: brown;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.card .errorPostComment {
+  margin-left: 20px;
+  padding: 5px;
+  color: brown;
+  font-size: medium;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-bugname {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .bugName-edit input {
+    margin-left: 0px;
+    width: 120px;
+  }
+  
+  .card .bugName-edit button {
+    margin-left: 0px;
+  }
+
+  .card-category {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .category-edit input {
+    margin-left: 0px;
+    width: 100px;
+  }
+  
+  .card .category-edit button {
+    margin-left: 0px;
+  }
+
+  .card-date {
+    display: none;
+  }
+}
+
+
+
+

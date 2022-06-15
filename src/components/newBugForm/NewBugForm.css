@@ -1,0 +1,84 @@
+.newBugForm {
+    width:800px;
+    margin: 60px auto;
+    padding: 20px 50px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+}
+
+.newBugForm h2 {
+    margin-left: 10%;
+    text-align: start;
+}
+
+.newBugForm input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+}
+
+.newBugForm textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+}
+
+.newBugForm .btn {
+    background-color: rgb(32, 51, 66);
+    color: white;
+    font-size: medium;
+}
+
+.newBugForm .btn:hover {
+    background-color: rgb(59, 94, 113);
+    color: white;
+    cursor: pointer;
+}
+
+.newBugForm .bugMessage {
+    display: block;
+    width:90%;
+    margin: 10px auto;
+    padding: 20px 20px;
+    border: solid 2px rgb(26, 35, 42);
+    border-radius: 5px;
+    
+}
+
+.newBugForm .no-message {
+    display: none;
+}
+
+@media only screen and (max-width: 830px) {
+    .newBugForm {
+        width:100%;
+        margin: 0px;
+    }
+    
+    .newBugForm h2 {
+        margin-left: 6%;
+    }
+    
+    .newBugForm input {
+        width: 90%;
+    }
+
+    .newBugForm textarea {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .newBugForm {
+        padding: 20px 10px;
+    }
+
+    .newBugForm h2 {
+        margin-left: 5%;
+    }
+  }

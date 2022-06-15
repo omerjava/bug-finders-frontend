@@ -1,0 +1,10 @@
+.myBugs {
+    width: 100%;
+}
+
+.myBugs .no-data {
+    min-height: 350px;
+    color: brown;
+    font-size: large;
+    font-weight: 600;
+}
