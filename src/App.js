@@ -54,7 +54,6 @@ function App() {
         }
       })
       .then((data) => {
-        console.log(data);
         setLoggedInEmail(data[0].email);
         setLoggedInUser(data[0].username);
       })
