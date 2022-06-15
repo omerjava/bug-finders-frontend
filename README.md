@@ -1,48 +1,14 @@
-# Hack Your Film Project
+# Bug Finder Project
 
-This project is developed in order to improve React skills.
+This website is developed in order to create a hub for developers who suffer a lot from bugs.
 
-In Hack Your Film project,
+In Bug Finder project,
 
-- user can see all films in small info cards, when he/she visits the website
-- user can make a search entering film name and/or letters
-- user can select a film category and see all films in that category
-- user can click to any film card to see details about that film
-- user can return back to main page by clicking Hack Your Film headline in the top
-  - or by using search/select options
-
-Technical details:
-
-HTML
-
-- `<input type="text"/>` tag and `<select>`,`<option>` tags are used to receive user input
-- user input is taken in `header` component
-
-CSS
-
-- media queries are used to provide responsiveness of website such as `@media only screen and (max-width: 400px) {}`
-- CSS Grid is used in some components such as in `filmList` to ensure orderly look: `display: grid; grid-template-columns: auto auto auto; justify-content: center; gap: 20px;`
-- CSS Flex is used in many cases such as in `header` component `display: flex; flex-direction: row; justify-content: space-between;`
-
-JavaScript and React
-
-- there are 6 components: `header, footer, film, filmList, card, bigCard`.
-- `header` and `footer` component are rendered always.
-- `card` component is part of `filmList` of component, so it is rendered whenever `filmList` is rendered
-- `bigCard` component is part of `film` of component, so it is rendered whenever `film` is rendered
-- in first load of page, `filmList` component is rendered together with `header` and `footer`
-- if user click to any film card, `film` component is rendered together with `header` and `footer`
-- if user click to `Hack Your Film` headline or make any search or select a category, `filmList` component is rendered together with `header` and `footer`
-- useState() and useEffect() hooks are used to get user input and update page according to user's choice
-- when local states are not enough, useContext() hook is used to meet the global state need
-- a separate context folder is created and `AllContext` object has been created and hold in a file there
-- global states are created in App.js since it is the highest level component `const [film, setFilm] = useState([]); const [filmList, setFilmList] = useState([]); const [filmDetails, setFilmDetails] = useState(false);`
-- `<AllContext.Provider value={{ film, setFilm, filmList, setFilmList, filmDetails, setFilmDetails, }} > </AllContext.Provider>` components in the App.js wrapped by the Context Provider.
-- global states are declared inside the value.
-
-Reference:
-
-- [Helpful resource for useContext()](https://www.youtube.com/watch?v=sP7ANcTpJr8&t=575s)
+- user can register and login to Bug Finder website
+- user can create a post regarding a bug and edit/delete his/her posts
+- user can create a comment to any post and edit/delete his/her comments
+- user can edit his/her user info and delete his/her user account
+- user can see all other Bug Finders and their posts and comments
 
 ## Getting Started with Create React App
 
