@@ -1,0 +1,25 @@
+.page-btn {
+  border: solid silver 1px;
+  padding: 10px;
+  color: brown;
+  background-color: rgb(249, 244, 239);
+  font-size: medium;
+  font-weight: 500;
+}
+
+.page-btn:hover {
+  cursor: pointer;
+  background-color: rgb(231, 220, 211);
+}
+
+.active {
+  color: rgb(249, 244, 239);
+  background-color: brown;
+}
+
+@media only screen and (max-width: 650px) {
+  .page-btn {
+    padding: 6px 5px;
+    font-size: small;
+  }
+}

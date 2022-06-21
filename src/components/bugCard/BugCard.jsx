@@ -258,8 +258,7 @@ function BugCard(props) {
       </div>
       <div className="errorUpdateBug">{errorUpdateBug}</div>
       <div className="card-comments">
-        {commentList
-          .filter((v) => v.bug_id === props.bugId)
+        {commentList?.filter((v) => v.bug_id === props.bugId)
           .map((v, i) => (
             <Comment
               key={i}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { AllContext } from "../../context/AllContext";
 import { auth } from "../../api-calls/auth-api-calls";
+import { useNavigate } from "react-router-dom";
 
 function RegisterForm() {
   const [username, setUsername] = useState("");
@@ -12,21 +13,25 @@ function RegisterForm() {
 
   const { messageRegister, setMessageRegister } = useContext(AllContext);
 
+  const navigate = useNavigate();
+
   const handleRegister = () => {
     const response = auth.registerUser(username, email, password);
 
-    response.then((res) => {
+    response
+      .then((res) => {
         if (res.ok) {
-          setMessageRegister("Your registration is successfully completed!");
+          navigate("/bug-finders-frontend/login");
+          setMessageRegister("");
         } else {
           setMessageRegister(
-            "We couldn't save your information! Please try again!"
+            `Sorry! We couldn't save your information due to: ${res.status} ${res.statusText}`
           );
         }
       })
       .catch((err) =>
         setMessageRegister(
-          "We couldn't save your information! Please try again!"
+          `Sorry! We couldn't save your information due to: ${err.message}`
         )
       );
   };

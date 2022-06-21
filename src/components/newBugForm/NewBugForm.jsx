@@ -2,6 +2,8 @@ import React from "react";
 import "./NewBugForm.css";
 import { useState } from "react";
 import { bugApi } from "../../api-calls/bug-api-calls";
+import { useNavigate } from "react-router-dom";
+
 
 function NewBugForm() {
   const [bugDescription, setBugDescription] = useState("");
@@ -9,15 +11,20 @@ function NewBugForm() {
   const [bugCategory, setBugCategory] = useState("");
   const [messageBug, setMessageBug] = useState("");
 
+  const navigate = useNavigate();
+
   const handleNewBug = () => {
     const response = bugApi.bugCreate(bugDescription, bugName, bugCategory);
 
     response
       .then((res) => {
-        if (res.ok) setMessageBug("Your Bug post is recorded successfully!");
-        else setMessageBug("Your access is expired!");
+        if (res.ok) {
+          setMessageBug("");
+          navigate("/bug-finders-frontend/bugs");
+        }
+        else setMessageBug(`Sorry! We couldn't save your Bug due to: ${res.status} ${res.statusText}`);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => setMessageBug(err.message));
   };
 
   return (

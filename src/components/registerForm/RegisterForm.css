@@ -43,11 +43,10 @@
 .registerForm .registerMessage {
     display: block;
     width:500px;
-    margin: 160px auto;
-    padding: 20px 50px;
+    margin: 60px auto;
+    padding: 180px 50px;
     border: solid 2px rgb(26, 35, 42);
     border-radius: 5px;
-    
 }
 
 .registerForm .no-message {

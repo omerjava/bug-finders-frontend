@@ -11,7 +11,7 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
-  const { setLoggedIn, setLoggedInUser } = useContext(AllContext);
+  const { setLoggedIn, setLoggedInUser, setLoggedInUserId } = useContext(AllContext);
 
   const navigate = useNavigate();
 
@@ -32,6 +32,7 @@ function LoginForm() {
         localStorage.setItem("accessToken", data.accessToken); 
         localStorage.setItem("refreshToken", data.refreshToken);
         setLoggedInUser(data.username); 
+        setLoggedInUserId(data.user_id);
       })
       .catch((err) => setMessage("We couldn't login! Please try again!"));
   };

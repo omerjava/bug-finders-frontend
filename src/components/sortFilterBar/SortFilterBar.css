@@ -1,0 +1,39 @@
+.sortFilterBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 40px;
+  margin-top: 5px;
+  color: brown;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sortFilterBar label {
+  margin-right: 5px;
+}
+
+.sortFilterBar input,
+select {
+  border: rgb(63, 62, 62) solid 1px;
+  width: 160px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.sortFilterBar .sort {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  .sortFilterBar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .sortFilterBar .sort {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}

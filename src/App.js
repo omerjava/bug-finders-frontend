@@ -26,8 +26,12 @@ function App() {
   const [loggedInEmail, setLoggedInEmail] = useState("");
   const [newUpdatedBug, setNewUpdatedBug] = useState(0);
   const [newDeletedBug, setNewDeletedBug] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageLimit, setPageLimit] = useState(5);
+  const [loggedInUserId, setLoggedInUserId] = useState("");
 
-  const isLoggedIn = async () => {
+
+    const isLoggedIn = async () => {
     const accessToken = await getToken();
 
     if (accessToken) setLoggedIn(true);
@@ -87,6 +91,9 @@ function App() {
           setNewUpdatedBug,
           newDeletedBug,
           setNewDeletedBug,
+          currentPage, setCurrentPage,
+          pageLimit, setPageLimit,
+          loggedInUserId, setLoggedInUserId
         }}
       >
         <Router>

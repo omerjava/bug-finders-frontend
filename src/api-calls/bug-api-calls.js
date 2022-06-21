@@ -21,16 +21,31 @@ export const bugApi = {
     return response;
   },
 
-  getAllBugs: async () => {
-    const response = await fetch(`${ORIGIN}/bugs/api/showAllBugs`);
+  getAllBugs: async (query) => {
+
+    const response = await fetch(`${ORIGIN}/bugs/api/showAllBugs${query}`);
 
     return response;
   },
 
-  getMyBugs: async () => {
+  searchBugs: async (query) => {
+
+    const response = await fetch(`${ORIGIN}/bugs/api/searchBugs${query}`);
+
+    return response;
+  },
+
+  countBugs: async (userId) => {
+
+    const response = await fetch(`${ORIGIN}/bugs/api/countBugs/${userId}`);
+
+    return response;
+  },
+
+  getMyBugs: async (query) => {
     const accessToken = await getToken();
 
-    const response = await fetch(`${ORIGIN}/bugs/api/showMyBugs`, {
+    const response = await fetch(`${ORIGIN}/bugs/api/showMyBugs${query}`, {
       headers: {
         "Content-type": "application/json",
         Authorization: `Bearer ${accessToken}`,
@@ -87,6 +102,13 @@ export const bugApi = {
     });
 
     return response;
-  }
+  },
+
+  sortBugs: async (query) => {
+
+    const response = await fetch(`${ORIGIN}/bugs/api/sortBugs?${query}`);
+
+    return response;
+  },
 
 };

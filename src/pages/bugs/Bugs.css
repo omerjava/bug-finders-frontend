@@ -5,7 +5,6 @@
 .bugs .bugListError {
     color: brown;
     font-weight: 500;
-    height: 400px;
 }
 
 .bugs .no-bugListError {
